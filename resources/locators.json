@@ -1,0 +1,116 @@
+{
+  "login": {
+    "bankManagerButton": [
+      "click",
+      "manager()"
+    ],
+    "bankCustomerButton": [
+      "click",
+      "customer()"
+    ],
+    "submitAccountButton": [
+      "type",
+      "submit"
+    ],
+    "homeButton": [
+      "click",
+      "home()"
+    ],
+    "customerDropdown": [
+      "model",
+      "custId"
+    ]
+  },
+  "manager": {
+    "customerListObj": [
+      "repeater",
+      "cust in Customers | orderBy:sortType:sortReverse | filter:searchCustomer"
+    ],
+    "accountNumber": [
+      "xpath",
+      "//html/body/div[3]/div/div[2]/div/div[2]/div/div/table/tbody/tr/td[4]"
+    ],
+    "customersButton": [
+      "click",
+      "showCust()"
+    ],
+    "addCustomerButton": [
+      "click",
+      "addCust()"
+    ],
+    "addAccountButton": [
+      "click",
+      "openAccount()"
+    ],
+    "firstName": [
+      "model",
+      "fName"
+    ],
+    "lastName": [
+      "model",
+      "lName"
+    ],
+    "postCode": [
+      "model",
+      "postCd"
+    ],
+    "buttonObj": [
+      "className",
+      "btn btn-default"
+    ],
+    "firstDropdown": [
+      "id",
+      "userSelect"
+    ],
+    "secondDropdown": [
+      "id",
+      "currency"
+    ],
+    "submitAccountButton": [
+      "type",
+      "submit"
+    ],
+    "searchCustomer": [
+      "model",
+      "searchCustomer"
+    ]
+  },
+  "customer": {
+    "accountNumberDropdown": [
+      "id",
+      "accountSelect"
+    ],
+    "depositButton": [
+      "click",
+      "deposit()"
+    ],
+    "withdrawlButton": [
+      "click",
+      "withdrawl()"
+    ],
+    "transactionsButton": [
+      "click",
+      "transactions()"
+    ],
+    "totalAmountAfterDeposit": [
+      "xpath",
+      "//html/body/div[3]/div/div[2]/div/div[2]/strong[2]"
+    ],
+    "transactionList": [
+      "repeater",
+      "tx in transactions | orderBy:sortType:sortReverse | sDate:startDate:end"
+    ],
+    "optionTagName": [
+      "tagName",
+      "option"
+    ],
+    "amountObj": [
+      "model",
+      "amount"
+    ],
+    "buttonObj": [
+      "className",
+      "btn btn-default"
+    ]
+  }
+}

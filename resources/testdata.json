@@ -1,0 +1,18 @@
+{ 
+   "login":{ 
+      "baseUrl":"http://www.way2automation.com/angularjs-protractor/banking/#/login"
+   },
+   "customerDetails":{ 
+      "firstName":"Shammi",
+      "lastName":"Jaiswal",
+      "postCode":"111BP",
+      "currency":[ 
+         "Pound",
+         "Dollar",
+         "Rupee"
+      ]
+   },
+   "results":{ 
+      "result1":"www.helloselenium.com"
+   }
+}
